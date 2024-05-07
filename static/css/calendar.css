@@ -1,0 +1,105 @@
+.calendar {
+  position: relative;
+  margin: 10px;
+
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 1px 2px -2px #000 inset;
+}
+ul.flex-box {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  position: absolute;
+
+  width: inherit;
+
+  margin: 0;
+  padding: 0;
+}
+li.hole {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75) inset;
+
+  background-color: #C08080;
+}
+.inner {
+  z-index: 1;
+
+  width: 6px;
+  height: 10px;
+
+  background-color: #807870;
+}
+li.placeholder {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+}
+.outer {
+  z-index: 2;
+
+  width: 6px;
+  height: 13.75px;
+  margin-top: -5px;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 1px 0 2px -1.5px rgba(0, 0, 0, 0.5), -1px 0 2px -1.5px rgba(0, 0, 0, 0.5);
+
+  background-color: #807870;
+}
+.upper-half {
+  position: relative;
+  z-index: 0;
+
+  height: 50px;
+
+  background-color: #C08080;
+
+  text-align: center;
+}
+.shadow {
+  position: absolute;
+  top: 6px;
+  left: 56px;
+  z-index: 1;
+}
+#year {
+  position: relative;
+  top: 4px;
+  z-index: 5;
+
+  font-size: 25px;
+  line-height: 50px;
+  font-family: "Fredericka the Great", monospace;
+}
+.lower-half {
+  position: relative;
+  z-index: 0;
+
+  height: 50px;
+
+  background-color: #F4F0E8;
+
+  text-align: center;
+}
+#month-and-day {
+  position: relative;
+  z-index: 5;
+
+  color: #C08080;
+  font-size: 20px;
+  line-height: 50px;
+  font-family: "Fredericka the Great", monospace;
+}

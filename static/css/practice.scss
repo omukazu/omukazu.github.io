@@ -1,0 +1,291 @@
+@font-face {
+    src: url('../font/practice/Southpaw.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'hand-written';
+}
+
+@keyframes animation {
+    from {
+        transform: rotateZ(0.5deg);
+    }
+
+    50% {
+        transform: rotateZ(-0.5deg);
+    }
+
+    to {
+        transform: rotateZ(0.5deg);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome-cork-board {
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+    background-color: #C0C0B8;
+
+    & .cork-board {
+        position: relative;
+        transform-origin: min(50vw, 50vh) min(1vw, 1vh);
+
+        height: min(75vw, 75vh);
+
+        background: url('../image/practice/cork-board.png') no-repeat;
+        background-size: contain;
+
+        transition-timing-function: ease-in-out;
+        animation-name: animation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+.cork-board {
+    & .notes {
+        position: relative;
+        top: min(20vw, 20vh);
+        left: min(15vw, 15vh);
+
+        width: min(70vw, 70vh);
+        height: min(50vw, 50vh);
+    }
+
+    & .note {
+        position: absolute;
+
+        width: min(30vw, 30vh);
+        height: min(20vw, 20vh);
+        border-top: min(3vw, 3vh) solid #5D627B;
+
+        background: #FFFFFF;
+
+        transition: 0.5s;
+
+        &.first {
+            transform: rotateZ(-3deg);
+        }
+
+        &.second {
+            left: min(40vw, 40vh);
+            top: min(20vw, 20vh);
+            transform: rotateZ(3deg);
+        }
+
+        &:hover {
+            box-shadow: 0 min(3vw, 3vh) min(3vw, 3vh) rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    & .pin {
+        width: min(2.5vw, 2.5vh);
+        height: min(2.5vw, 2.5vh);
+        margin-left: min(13.75vw, 13.75vh);
+        margin-top: unquote("max(-2.75vw, -2.75vh)");
+        margin-bottom: min(5vw, 5vh);
+        border-radius: 100%;
+        filter: drop-shadow(min(0.2vw, 0.2vh) min(0.2vw, 0.2vh) min(0.2vw, 0.2vh) rgba(0, 0, 0, 1));
+
+        &.red {
+            background-color: #DD0000;
+        }
+
+        &.green {
+            background: #00BB88;
+        }
+    }
+
+    & .message {
+        margin-top: unquote("max(-2.75vw, -2.75vh)");
+        overflow: hidden;
+
+        font-weight: 900;
+        font-size: min(4vw, 4vh);
+        font-family: hand-written;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.book {
+    /*align-items: center;*/
+    display: flex;
+    /*justify-content: center;*/
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #C0C0B8;
+}
+
+#book {
+    position: relative;
+
+    transition: opacity 0.4s 0.2s;
+}
+
+.bound {
+    margin-left: min(18vw, 18vh);
+    margin-top: min(24vw, 24vh);
+
+    /* z軸方向の遠近感を与える*/
+    perspective: min(250vw, 250vh);
+    -webkit-perspective: min(250vw, 250vh);
+
+    & #pages {
+        position: relative;
+        transform: rotateX(12deg);
+        transform-style: preserve-3d;
+
+        width: min(64vw, 64vh);
+        height: min(36vw, 36vh);
+        border-radius: 4px;
+
+        backface-visibility: hidden;
+    }
+
+    & .page {
+        position: absolute;
+        float: none;
+        clear: none;
+        transform-style: preserve-3d;
+        transform-origin: 0 0;
+
+        width: min(32vw, 32vh);
+        height: min(36vw, 36vh);
+        margin: 0;
+
+        cursor: pointer;
+
+        transition: transform 1.5s;
+
+        backface-visibility: hidden;
+        user-select: none;
+
+        &:nth-child(odd) {
+            right: 0;
+            transform: rotateY(0deg);
+
+            border-radius: 0 4px 4px 0;
+
+            pointer-events: all;
+        }
+
+        /*一番上を検知するよう少し傾けておく*/
+        &.current:nth-child(odd) {
+            transform: rotateY(-1deg);
+        }
+
+        &.flipped:nth-child(odd) {
+            transform: rotateY(-180deg);
+
+            pointer-events: none;
+        }
+
+        &:nth-child(even) {
+            left: 0;
+            transform: rotateY(180deg);
+            transform-origin: 100% 0;
+
+            border-radius: 4px 0 0 4px;
+
+            pointer-events: none;
+        }
+
+        &.current.flipped:nth-child(even) {
+            transform: rotateY(1deg);
+        }
+
+        &.flipped:nth-child(even) {
+            transform: rotateY(0deg);
+
+            pointer-events: all;
+        }
+    }
+
+    & .effect {
+        position: absolute;
+
+        width: min(32vw, 32vh);
+        height: min(36vw, 36vh);
+        margin: 0;
+
+        background-color: rgba(0, 0, 0, 0);
+
+        transition: background 0.75s;
+
+        &.one:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        &.two {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    & .bookmark {
+        opacity: 0.75;
+        position: absolute;
+        left: min(26vw, 26vh);
+
+        width: min(10vw, 10vh);
+        height: min(3vw, 3vh);
+        border-right: solid min(2vw, 2vh) #FF7D6E;
+
+        background-color: #FFFFFF;
+
+        &.flipped {
+            opacity: 0.75;
+            left: unquote("max(-4vw, -4vh)");
+
+            border-left: solid 2vw #FF7D6E;
+            border-right: none;
+
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+.page {
+    float: left;
+
+    width: min(32vw, 32vh);
+    height: min(36vw, 36vh);
+    margin-bottom: 0.5em;
+
+    background: #FFFFFF left top no-repeat;
+    background-size: cover;
+
+    &:first-child {
+        float: right;
+    }
+
+    &:nth-child(even) {
+        clear: both;
+    }
+}
+
+@for $index from 1 through 24 {
+    @if $index == 1 or $index == 24 {
+        .page:nth-of-type(#{$index}) {
+            background: #000000;
+        }
+    }
+    @else {
+        .page:nth-of-type(#{$index}) {
+            background: #EEFFEE;
+        }
+    }
+
+    @if $index % 2 == 1 and $index > 1 and $index < 24 {
+        .page:nth-of-type(#{$index}) {
+            background-position: right top;
+        }
+    }
+}
