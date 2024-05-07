@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="//cdn.skypack.dev/sanitize.css">
+        <link rel="icon" href="static/image/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="static/image/apple-touch-icon-180x180.png">
+        <link href="//fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/index.css">
+        <link rel="stylesheet" href="static/css/calendar.css">
+    </head>
+    <body>
+        <main>
+            <div id="header">Welcome!</div>
+
+            <div class="row">
+                <img class="icon" src="static/image/index/about_me.png" alt="about_me">
+                <div>
+                    <p class="title">About me</p>
+                    <p class="text">
+                        I'm Kazumasa Omura (大村 和正), currently working for Nikkei Inc.<br>
+                        My research interests lie in discourse and pragmatics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row reverse">
+                <div>
+                    <img class="icon" src="static/image/index/education.png" alt="education">
+                    <div class="calendar">
+                        <ul class="flex-box">
+                            <li class="hole"><div class="inner"></div></li>
+                            <li class="hole"><div class="inner"></div></li>
+                            <li class="hole"><div class="inner"></div></li>
+                            <li class="hole"><div class="inner"></div></li>
+                            <li class="hole"><div class="inner"></div></li>
+                        </ul>
+                        <ul class="flex-box">
+                            <li class="placeholder"><div class="outer"></div></li>
+                            <li class="placeholder"><div class="outer"></div></li>
+                            <li class="placeholder"><div class="outer"></div></li>
+                            <li class="placeholder"><div class="outer"></div></li>
+                            <li class="placeholder"><div class="outer"></div></li>
+                        </ul>
+                        <div class="upper-half">
+                            <span id="year"></span>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="lower-half">
+                            <span id="month-and-day"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="title">Education</p>
+                    <p class="text">
+                        Ph.D. student [April 1st, 2021 - March 25th, 2024]<br>
+                        Department of Intelligence Science and Technology, Graduate School of Informatics, Kyoto University<br>
+                        <br>
+                        Master's degree [April 1st, 2019 - March 23rd, 2021]<br>
+                        Department of Intelligence Science and Technology, Graduate School of Informatics, Kyoto University<br>
+                        <br>
+                        Bachelor's degree [April 1st, 2015 - March 26th, 2019]<br>
+                        Department of Electrical and Electronic Engineering, Faculty of Engineering, Kyoto University<br>
+                        <br>
+                        High School<br>
+                        General Course of Ishikawa Prefectural Kanazawa Izumigaoka Senior High School
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img class="icon" src="static/image/index/publication.png" alt="publication">
+                <div>
+                    <p class="title">Publication</p>
+                    <p class="sub-title">Journal Paper (Refereed)</p>
+                    <p class="text">
+                        大村 和正, 河原 大輔, 黒橋 禎夫<br>
+                        「基本イベントに基づく常識推論データセットの構築と利用」<br>
+                        自然言語処理 Vol.30 No.4, December 2023, pp. 1206-1239<br>
+                        <span style="color: #FF8080;">論文賞</span> (4/38)<br>
+                        <a href="https://www.jstage.jst.go.jp/article/jnlp/30/4/30_1206/_article/-char/ja">[paper]</a>
+                    </p>
+                    <p class="sub-title">Conference Papers (Refereed)</p>
+                    <p class="text">
+                        Kazumasa Omura, Fei Cheng, and Sadao Kurohashi<br>
+                        "An Empirical Study of Synthetic Data Generation for Implicit Discourse Relation Recognition"<br>
+                        In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), Turin, Italy.<br>
+                        (to appear)<br>
+                        <br>
+
+                        Kazumasa Omura, Kei Kubo, Frederic Bergeron, and Sadao Kurohashi<br>
+                        "Toward Game-Based Learning of Japanese Writing for Elementary School Students"<br>
+                        In Proceedings of the 31st International Conference on Computers in Education (ICCE 2023), Shimane, Japan, pp. 655-660<br>
+                        (accepted as a short paper, 14/33)<br>
+                        <a href="https://eds.let.media.kyoto-u.ac.jp/ICCE2023/wp-content/uploads/2023/12/ICCE2023-Proceedings-V1-1214-final.pdf#page=718">[proceeding]</a>
+                        <a href="http://nlp.ist.i.kyoto-u.ac.jp/EN/?Kotobamusubi">[website]</a><br>
+                        <br>
+
+                        Kazumasa Omura and Sadao Kurohashi<br>
+                        "Improving Commonsense Contingent Reasoning by Pseudo-data and its Application to the Related Tasks"<br>
+                        In Proceedings of the 29th International Conference on Computational Linguistics (COLING 2022), October 2022, Gyeongju, Republic of Korea, pp. 812-823<br>
+                        (acceptance rate: 522/1563)<br>
+                        <span style="color: #FF8080;">Selected as one of the Outstanding Papers!</span> (11/634) <a href="static/image/index/coling_2022_outstanding_papers.jpg">[ss]</a><br>
+                        <a href="https://aclanthology.org/2022.coling-1.68/">[proceeding]</a>
+                        <a href="http://nlp.ist.i.kyoto-u.ac.jp/EN/?KUCI">[website]</a><br>
+                        <br>
+                        Kazumasa Omura, Daisuke Kawahara, and Sadao Kurohashi<br>
+                        "A Method for Building a Commonsense Inference Dataset based on Basic Events"<br>
+                        In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020), November 2020, Online, pp. 2450–2460<br><!--[Zoom Q&A session]<br>-->
+                        (acceptance rate: 602/2445)<br>
+                        <a href="https://www.aclweb.org/anthology/2020.emnlp-main.192/">[proceeding]</a>
+                        <a href="http://nlp.ist.i.kyoto-u.ac.jp/EN/?KUCI">[website]</a><br>
+                        <br>
+                        ----------<br>
+                        Nobuhiro Ueda,
+                        <u>Kazumasa Omura</u>,
+                        Takashi Kodama,
+                        Hirokazu Kiyomaru,
+                        Yugo Murawaki,
+                        Daisuke Kawahara,
+                        and Sadao Kurohashi<br>
+                        "KWJA: A Unified Japanese Analyzer Based on Foundation Models"<br>
+                        In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics: System Demonstrations (ACL 2023 Demo), July 2023, Toronto, Canada, pp. 538-548<br>
+                        (acceptance rate: 58/155)<br>
+                        <a href="https://aclanthology.org/2023.acl-demo.52/">[proceeding]</a><br>
+                        <br>
+                        Akiko Aizawa,
+                        Frederic Bergeron,
+                        Junjie Chen,
+                        Fei Cheng,
+                        Katsuhiko Hayashi,
+                        Kentaro Inui,
+                        Hiroyoshi Ito,
+                        Daisuke Kawahara,
+                        Masaru Kitsuregawa,
+                        Hirokazu Kiyomaru,
+                        Masaki Kobayashi,
+                        Takashi Kodama,
+                        Sadao Kurohashi,
+                        Qianying Liu,
+                        Masaki Matsubara,
+                        Yusuke Miyao,
+                        Atsuyuki Morishima,
+                        Yugo Murawaki,
+                        <u>Kazumasa Omura</u>,
+                        Haiyue Song,
+                        Eiichiro Sumita,
+                        Shinji Suzuki,
+                        Ribeka Tanaka,
+                        Yu Tanaka,
+                        Masashi Toyoda,
+                        Nobuhiro Ueda,
+                        Honai Ueoka,
+                        Masao Utiyama,
+                        and Ying Zhong (in alphabetical order)<br>
+                        "A System for Worldwide COVID-19 Information Aggregation"<br>
+                        In Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020, November 2020, Online<br>
+                        <a href="https://aclanthology.org/2020.nlpcovid19-2.13/">[proceeding]</a>
+                        <a href="https://lotus.kuee.kyoto-u.ac.jp/NLPforCOVID-19/ja/#t/%E4%BA%88%E9%98%B2%E3%83%BB%E9%98%B2%E7%96%AB%E3%83%BB%E8%A6%8F%E5%88%B6">[website]</a><br>
+                        <br>
+                        Hirokazu Kiyomaru, <u>Kazumasa Omura</u>, Yugo Murawaki, Daisuke Kawahara, and Sadao Kurohashi<br>
+                        "Diversity-aware Event Prediction based on a Conditional Variational Autoencoder with Reconstruction"<br>
+                        In Proceedings of the First Workshop on Commonsense Inference in Natural Language Processing (COIN), November 2019, Hong Kong, pp. 113-122<br>
+                        <a href="https://aclanthology.org/D19-6014/">[proceeding]</a>
+                    </p>
+
+                    <p class="sub-title">Misc. (Non-Refereed)</p>
+                    <p class="text">
+                        児玉 貴志, 植田 暢大, <u>大村 和正</u>, 清丸 寛一, 村脇 有吾, 河原 大輔, 黒橋 禎夫<br>
+                        「テキスト生成モデルによる日本語形態素解析」<br>
+                        言語処理学会 第29回年次大会, March 2023, 沖縄<br>
+                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C2-3.pdf">[proceeding]</a><br>
+                        <br>
+                        大村 和正, 白井 穂乃, 石原 祥太郎, 澤 紀彦<br>
+                        「極性と重要度を考慮した決算短信からの業績要因文の抽出」<br>
+                        言語処理学会 第29回年次大会, March 2023, 沖縄<br>
+                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/D11-2.pdf">[proceeding]</a><br>
+                        <br>
+                        植田 暢大, <u>大村 和正</u>, 児玉 貴志, 清丸 寛一, 村脇 有吾, 河原 大輔, 黒橋 禎夫<br>
+                        「KWJA: 汎用言語モデルに基づく日本語解析器」<br>
+                        情報処理学会 第253回自然言語処理研究会, September 2022, 京都<br>
+                        <span style="color: #FF8080;">優秀研究賞</span> (2/20)<br>
+                        <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220232&item_no=1&page_id=13&block_id=8">[proceeding]</a><br>
+                        <br>
+                        大村 和正, 黒橋 禎夫<br>
+                        「疑似問題による常識推論能力の改善と関連タスクへの効果」<br>
+                        言語処理学会 第28回年次大会, March 2022, Online<br>
+                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/F8-1.pdf">[proceeding]</a><br>
+                        <br>
+                        大村 和正, 白井 穂乃, 石原 祥太郎, 澤 紀彦<br>
+                        「決算短信からの業績要因文の抽出に向けた業績発表記事からの訓練データの生成」<br>
+                        言語処理学会 第28回年次大会, March 2022, Online<br>
+                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/PH3-5.pdf">[proceeding]</a><br>
+                        <br>
+                        大村 和正, 黒橋 禎夫<br>
+                        「テキストからの蓋然的関係知識の獲得と計算機および人間の学習への活用」<br>
+                        京都大学第16回ICTイノベーション, February 2022, Online<br>
+                        <br>
+                        大村 和正, 久保 圭, 黒橋 禎夫<br>
+                        「ことばつなぎゲーム:ゲーミフィケーションによる小学生の作文教育」<br>
+                        言語処理学会 第27回年次大会, March 2021, Online<br>
+                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/D5-1.pdf">[proceeding]</a>
+                        <a href="https://www.kanken.or.jp/project/investigation/project/ai.html#seika">[website]</a>
+                        <a href="https://lotus.kuee.kyoto-u.ac.jp/~omura/app/Kotoba-musubi/">[prototype]</a><br>
+                        <br>
+                        大村 和正<br>
+                        "A Method for Building a Commonsense Inference Dataset based on Basic Events"<br>
+                        自然言語処理 2021年28巻1号, March 2021, pp. 287-291<br>
+                        <a href="https://www.jstage.jst.go.jp/article/jnlp/28/1/28_287/_article/-char/ja">[article]</a><br>
+                        <br>
+                        大村 和正, 河原 大輔, 黒橋 禎夫<br>
+                        「基本イベントに基づく常識推論データセットの構築」<br>
+                        言語処理学会 第26回年次大会, March 2020, Online<br>
+                        <a href="http://nlp.ist.i.kyoto-u.ac.jp/member/omura/NLP2020_errata.pdf">[errata]</a><br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row reverse">
+                <img class="icon" src="static/image/index/miscellaneous.png" alt="miscellaneous">
+                <div>
+                    <p class="title">Misc.</p>
+                    <p class="text">
+                        日本学術振興会特別研究員 (DC2) (第一次採用内定) [April 1st, 2022 - March 31st, 2024]<br>
+                        情報・ＡＩ・データ科学博士人材フェローシップ [April 1st, 2021 - March 31st, 2022]<br>
+                        <br>
+                        「人を知る」人工知能講座 2023 TA [September 8th, 2023]<br>
+                        「人を知る」人工知能講座 2022 TA [November 11th-12th, 17th-18th, 2022]<br>
+                        「人を知る」人工知能講座 2021 TA (4-3b 入力誤り訂正 の演習も担当) [October 28th-29th, November 4th-5th, 2021]<br>
+                        「人を知る」人工知能講座 2020 TA [October 29th-30th, November 5th-6th, 2020]<br>
+                        教育研究助成に関するOA [July 1st, 2020 - March 31th, 2021]<br>
+                        <br>
+                        <a href="https://github.com/ku-nlp/kwja">KWJA</a>を公開 (固有表現認識・言語素性付与・構文解析を担当) [September 30th, 2022]<br>
+                        <a href="https://www.kanken.or.jp/project/investigation/project/ai.html#seika">「いちまるとはじめよう！ことばむすび」</a>を公開 (バックエンドなどを担当) [January 25th, 2022]<br>
+                        <a href="http://nlp.ist.i.kyoto-u.ac.jp/?KUCI">京都大学常識推論データセット</a>を公開 [October 6th, 2020]<br>
+                        <br>
+                        <a href="https://www.anlp.jp/award/ronbun.html">2023年度 言語処理学会 論文賞</a> [March 11th, 2024]<br>
+                        <a href="https://doi.org/10.48448/xk5q-z870">COLING 2022 Outstanding Paper Award</a> [October 15th, 2022]<br>
+                        <a href="https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/%E6%8E%88%E8%B3%9E/outstanding?authuser=0#h.lkyuykn30vu7">情報処理学会 第253回自然言語処理研究会 優秀研究賞</a> (共著) [September 30th, 2022]<br>
+                        <img class="trophy" src="static/image/index/gold.png" alt="gold_trophy">
+                        <a href="http://www.design.kyoto-u.ac.jp/sds2022/">京都大学サマーデザインスクール</a> 最優秀賞 [September 2nd, 2022]<br>
+                        <img class="trophy" src="static/image/index/silver.png" alt="silver_trophy">
+                        <a href="https://pdf.irpocket.com/C8303/bbZB/z38u/LzVj.pdf">新生ハッカソン 優秀賞(総合)</a> [February 28th, 2020]<br>
+<!--                        <img class="trophy" src="static/image/index/silver.png">-->
+<!--                        <a href="https://signate.jp/competitions/182/summary">マイナビ × SIGNATE Student Cup 2019 2nd Place(solo) / 300 teams</a> [November 7th, 2019]<br>-->
+                        <img class="trophy" src="static/image/index/gold.png" alt="gold_trophy">
+                        <a href="https://data.gunosy.io/entry/summer-internship-2019">Gunosy Summer Internship 2019 1st Place</a> [September 5th, 2019]<br>
+                        <br>
+                        TOEIC 850 [March 10th, 2019]
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="display: block">
+                <p class="sub-title">物置</p>
+                <div id="masonry-container">
+                    <div class="card">
+                        <img class="card-image" src="static/image/index/kuci.png" style="width: 240px; height: 160px;">
+                        <div class="card-content">
+                            <h5 class="sub-title"><a href="//lotus.kuee.kyoto-u.ac.jp/~omura/app/KUCI/">常識推論問題デモ</a></h5>
+                            <p class="text">常識推論問題のデモサイト<br>(修士の研究)</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="../app/static/image/kotoba_musubi/play.gif" style="width: 240px; height: 210px;">
+                        <div class="card-content">
+                            <h5 class="sub-title"><a href="//lotus.kuee.kyoto-u.ac.jp/~omura/app/Kotoba-musubi/">ことばつなぎゲーム</a></h5>
+                            <p class="text">「いちまるとはじめよう！<br>ことばむすび」のプロトタイプ</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="static/image/index/othello.png" style="width: 240px; height: 210px;">
+                        <div class="card-content">
+                            <h5 class="sub-title"><a href="//lotus.kuee.kyoto-u.ac.jp/~omura/app/othello/">オセロ</a></h5>
+                            <p class="text">盤面と次の一手の組を1000万組<br>学習させたオセロAI</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="static/image/index/html_css_js.png" style="width: 240px; height: 240px;">
+                        <div class="card-content">
+                            <h5 class="sub-title"><a href="static/html/practice.html">練習</a></h5>
+                            <p class="text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="//code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" crossorigin="anonymous"></script>
+        <script>
+            jQuery(function ($) {
+                $('#masonry-container').masonry({
+                    itemSelector: '.card',
+                    columnWidth: 260,
+                    isFitWidth: true
+                });
+            });
+            const today = new Date();
+            const months = ['Jan.','Feb.','Mar.','Apr.','May','June','July','Aug.','Sept.','Oct.','Nov.','Dec.']
+            const day = today.getDate();
+            let suffix = 'th';
+            if ([1, 21, 31].includes(day)) {
+                suffix = 'st';
+            }
+            else if ([2, 22].includes(day)) {
+                suffix = 'st';
+            }
+            else if ([3, 23].includes(day)) {
+                suffix = 'rd';
+            }
+            document.getElementById('year').innerText = `${today.getFullYear()}`;
+            document.getElementById('month-and-day').innerText = `${months[today.getMonth()]} ${day}${suffix}`;
+        </script>
+    </body>
+</html>
