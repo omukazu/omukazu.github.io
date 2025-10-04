@@ -1,8 +1,8 @@
 @font-face {
-    src: url('../font/practice/Southpaw.ttf') format('truetype');
+    src: url("../font/practice/Southpaw.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-    font-family: 'hand-written';
+    font-family: "hand-written";
 }
 
 @keyframes animation {
@@ -36,7 +36,7 @@ a {
 
         height: min(75vw, 75vh);
 
-        background: url('../image/practice/cork-board.png') no-repeat;
+        background: url("../image/practice/cork-board.png") no-repeat;
         background-size: contain;
 
         transition-timing-function: ease-in-out;
@@ -279,7 +279,7 @@ a {
     }
     @else {
         .page:nth-of-type(#{$index}) {
-            background: #EEFFEE;
+            background: #FFFCF8;
         }
     }
 

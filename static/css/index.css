@@ -1,76 +1,116 @@
 * {
-  font-family: Monaco, Consolas, monospace, Hiragino Kaku Gothic ProN, Meiryo, sans-serif; }
+  font-family: Menlo, Meiryo;
+}
 
 main {
   overflow-y: scroll;
-  background-color: #F4F0E8; }
+  background-color: #FFFCF8;
+  font-size: 12.5px;
+}
 
 #header {
   padding-left: min(2vw, 2vh);
   width: 100vw;
   height: 50px;
   background-color: #404040;
-  color: #F4F0E8;
-  font-weight: 900;
+  color: #FFFCF8;
+  font-weight: bold;
   font-size: 30px;
-  line-height: 50px; }
+  line-height: 50px;
+}
 
 .row {
   display: flex;
   width: 100vw;
-  background-color: #F4F0E8;
-  color: #404040; }
-  .row.reverse {
-    background-color: #404040;
-    color: #F4F0E8; }
+  background-color: #FFFCF8;
+  color: #404040;
+}
+.row.reverse {
+  background-color: #404040;
+  color: #FFFCF8;
+}
 
 .icon {
   margin: 10px;
   width: 100px;
   height: 100px;
   border: 5px solid #808080;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .title {
   margin: 0;
   padding: 10px 0 0 10px;
-  font-weight: 900;
-  font-size: 25px; }
+  font-weight: bold;
+  font-size: 25px;
+}
 
 .sub-title {
   margin: 0;
   padding: 10px 0 0 10px;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .text {
-  margin: 0 0 25px 0;
+  margin: 0 0 10px 0;
   padding: 10px 0 0 10px;
   font-weight: normal;
-  font-size: 15px; }
+  font-size: 12.5px;
+}
 
 a {
-  color: #60A0E0; }
-  a:visited {
-    color: #C080C0; }
+  color: #2196F3;
+}
+a:visited {
+  color: #2196F3;
+}
 
 .trophy {
+  margin-bottom: 2.5px;
   width: 15px;
-  height: 15px; }
+  height: 15px;
+}
 
 .card {
   margin: 0 5px 5px 5px;
   border: 5px ridge #C0C0C0;
-  box-shadow: rgba(0, 0, 0, 0.375) 5px 5px 5px; }
+  box-shadow: rgba(0, 0, 0, 0.375) 5px 5px 5px;
+}
 
 .card-image {
   border-bottom: solid 3px #C0C0C0;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+}
 
 #masonry-container {
   padding: 5px;
   clear: both;
   border-radius: 5px;
-  background: transparent; }
+  background: transparent;
+}
+
+.publication-item {
+  display: inline-block;
+}
+.publication-item > .text {
+  width: 75vw;
+}
+
+.badges {
+  margin: 10px 0 -5px 10px;
+}
+
+.badge {
+  display: inline-block;
+  border: #FFFCF8 solid 1.5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #FFEB3B;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=index.css.map */

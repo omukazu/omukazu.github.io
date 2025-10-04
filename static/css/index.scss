@@ -1,11 +1,13 @@
 * {
-  font-family: Monaco, Consolas, monospace, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  font-family: Menlo, Meiryo;
 }
 
 main {
     overflow-y: scroll;
 
-    background-color: #F4F0E8;
+    background-color: #FFFCF8;
+
+    font-size: 12.5px;
 }
 
 #header{
@@ -15,8 +17,8 @@ main {
 
     background-color: #404040;
 
-    color: #F4F0E8;
-    font-weight: 900;
+    color: #FFFCF8;
+    font-weight: bold;
     font-size: 30px;
     line-height: 50px;
 }
@@ -25,14 +27,14 @@ main {
     display: flex;
     width: 100vw;
 
-    background-color: #F4F0E8;
+    background-color: #FFFCF8;
 
     color: #404040;
 
     &.reverse {
         background-color: #404040;
 
-        color: #F4F0E8;
+        color: #FFFCF8;
     }
 }
 
@@ -49,7 +51,7 @@ main {
     margin: 0;
     padding: 10px 0 0 10px;
 
-    font-weight: 900;
+    font-weight: bold;
     font-size: 25px;
 }
 .sub-title {
@@ -60,20 +62,21 @@ main {
     font-size: 20px;
 }
 .text {
-    margin: 0 0 25px 0;
+    margin: 0 0 10px 0;
     padding: 10px 0 0 10px;
 
     font-weight: normal;
-    font-size: 15px;
+    font-size: 12.5px;
 }
 a {
-    color: #60A0E0;
+    color: #2196F3;
     &:visited {
-        color: #C080C0;
+        color: #2196F3;
     }
 }
 
 .trophy {
+    margin-bottom: 2.5px;
     width: 15px;
     height: 15px;
 }
@@ -97,4 +100,28 @@ a {
     border-radius: 5px;
 
     background: transparent;
+}
+
+.publication-item {
+    display: inline-block;
+    & > .text {
+        width: 75vw;
+    }
+}
+
+.badges {
+    margin: 10px 0 -5px 10px;
+}
+.badge {
+    display: inline-block;
+
+    border: #FFFCF8 solid 1.5px;
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+.highlight {
+    color: #FFEB3B;
+    font-weight: bold;
 }
