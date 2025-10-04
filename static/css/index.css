@@ -91,10 +91,7 @@ a:visited {
 }
 
 .publication-item {
-  display: inline-block;
-}
-.publication-item > .text {
-  width: 75vw;
+  width: 100%;
 }
 
 .badges {

@@ -12,7 +12,7 @@
     color: #FFEB3B;
 }
 
-@media ( min-width : 600px ) {
+@media ( min-width : 500px ) {
     .timeline > li {
         position: relative;
 
@@ -30,14 +30,14 @@
     .item {
         float: left;
 
-        width: 75%;
+        width: calc(100vw - 120px - 140px);
         padding-left: 25px;
         border-left: 1px #404040 solid;
     }
     .item.reverse {
         float: left;
 
-        width: 75%;
+        width: calc(100vw - 120px - 140px);
         padding-left: 25px;
         border-left: 1px #FFFCF8 solid;
     }

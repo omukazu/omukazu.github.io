@@ -103,11 +103,13 @@ a {
 }
 
 .publication-item {
-    display: inline-block;
-    & > .text {
-        width: 75vw;
-    }
+    width: 100%;
 }
+// @media ( min-width : 600px ) {
+//     .publication-item {
+//         width: 80%;
+//     }
+// }
 
 .badges {
     margin: 10px 0 -5px 10px;
